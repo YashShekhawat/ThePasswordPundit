@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Password analyzer checks your password and gives you an honest opinion about your password in a funny way.">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Password Analyzer</title>
+</head>
+
+<body>
+
+    <section>
+        <header>
+            <h1>Password Analyzer</h1>
+        </header>
+    </section>
+
+    <section class="password-container">
+        <input id="password" type="password" placeholder="Please Enter a Password">
+    </section>
+
+    <section class="comment">
+        <span class="comment-text">Comments</span>
+        <span class="reviews">
+            <h4 class="main-comment">
+                Imagine your <span class="inLaws">in-laws</span> are helping you
+                with a password...
+            </h4>
+        </span>
+    </section>
+
+    <section class="need-suggestion">
+
+    </section>
+
+    <section class="suggestion-box">
+
+        <div class="suggestion-div">
+
+            <div class="heading">
+                <h1 style="padding: 12px; font-size: 2.1rem;">Suggestion Box</h1>
+                <p style="font-size: 1.2rem;">We will suggest you some strong passwords that you can use if you want to
+                </p>
+            </div>
+
+            <div class="boxes">
+                <!-- <div class="box box-left">
+                    <div class="header">Strong Passwords</div>
+                    <div class="content">
+                        <ul>
+                            <li>Y#dkasdh</li>
+                            <li>daskjdu</li>
+                            <li>sdfkjhdf</li>
+                            <li>sdfkjhio</li>
+                            <li>skjfdhk</li>
+                        </ul>
+                    </div>
+                </div> -->
+
+
+                <div class="rightBoxOuter">
+                    <div class="recommend">
+                        <p> Recomended</p>
+                    </div>
+                    <div class="box box-right">
+
+                        <div class="header">Weak Passwords</div>
+                        <div id="contentID" class="content">
+                            <ul class="weakPasswords">
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="recommend">
+                        <img class="img" src="arrow.png" alt="">
+                        <p class="warning"> Click to see the passwords which can make hackers life easy.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+    <div class="suggestion-btn">
+        <button id="needSuggestion">Need Suggestion?</button>
+        <!-- <a id="needSuggestion" href="#">Need Suggestion?</a> -->
+    </div>
+
+    <div class="coffee">
+        <script data-name="BMC-Widget" data-cfasync="false"
+            src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="YashShekhawat"
+            data-description="Support me on Buy me a coffee!" data-message="" data-color="#FF5F5F" data-position="Right"
+            data-x_margin="18" data-y_margin="18"></script>
+    </div>
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>

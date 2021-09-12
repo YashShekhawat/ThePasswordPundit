@@ -1,0 +1,1 @@
+export let banWords = "1234567,password,hello123,password123,football,secure";
