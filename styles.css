@@ -1,26 +1,31 @@
 @font-face {
     font-family: "Gilroy";
-    src: url(./gilroy/Gilroy-Bold.otf)format("otf");
+    src: url(./fonts/Gilroy-Bold.otf)format("otf");
 }
 
 @font-face {
     font-family: "Gilroy";
-    src: url(./gilroy/Gilroy-Regular.otf)format("otf");
+    src: url(./fonts/Gilroy-Regular.otf)format("otf");
 }
 
 @font-face {
     font-family: "Gilroy";
-    src: url(./gilroy/Gilroy-Medium.otf)format("otf");
+    src: url(./fonts/Gilroy-Medium.otf)format("otf");
 }
 
 @font-face {
     font-family: "Gilroy";
-    src: url(./gilroy/Gilroy-Semibold.otf) format("otf");
+    src: url(./fonts/Gilroy-Semibold.otf) format("otf");
 }
 
 @font-face {
     font-family: "Gilroy";
-    src: url(./gilroy/Gilroy-Heavy.otf) format("otf");
+    src: url(./fonts/Gilroy-Heavy.otf) format("otf");
+}
+
+@font-face {
+    font-family: "Ink Free";
+    src: url(./fonts/Inkfree.ttf)format("ttf");
 }
 
 * {
@@ -241,7 +246,7 @@ span h4 {
 .recommend {
     display: flex;
     padding: 15px;
-    font-family: Ink Free;
+    font-family: "Ink Free";
     font-size: 20px;
 }
 
