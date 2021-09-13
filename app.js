@@ -12,11 +12,11 @@ import { banWords } from "./banwords.js";
 
 
     // array for all types of comments.
-    let bad = ["Oh darling. go $buy$ a brain.", "I $hope$ this account isn't important.", "May god have $mercy$ on your email account.", "Is that how you protect your account from your $partner?$", "This password needs more $emoji$", "Don't come $crying$ to me when you're hacked.", "Really, you call $that!$ a password?", "Find your $patience$ before i lose mine", "I'm afraid about your $wifi$ password", "Do you even know what a password $is!?$", "Are you taking this $seriously?$", "How old are you? $5$ ??", "Now its $enough$", "I've seen $dogs$ with better passwords.", "I am busy right now, can i $ignore$ you some other time?", "Mashing your $head$ on the keyboard would be more secure", "Yaar kuch aur type karo $mzaa$ nhi aa rha.", "I was $ignoring$ you from the very first attempt"]
+    let bad = ["Oh darling. go $buy$ a brain.", "I $hope$ this account isn't important.", "May god have $mercy$ on your email account.", "Is that how you protect your account from your $partner?$", "This password needs more $emoji.$", "Don't come $crying$ to me when you're hacked.", "Really, you call $that!$ a password?", "Find your $patience$ before i lose mine.", "I'm afraid about your $wifi$ password.", "Do you even know what a password $is!?$", "Are you taking this $seriously?$", "How old are you? $5$ ??", "Apse $better$ ummeed kiye the hum.", "I've seen $dogs$ with better passwords.", "I am busy right now, can i $ignore$ you some other time?", "Mashing your $head$ on the keyboard would be more secure.", "Yaar kuch aur type karo $mzaa$ nhi aa rha.", "I was $ignoring$ you from the very first attempt."]
     //let bad = ["Oh darling. Go $buy$ a brain.", "I $hope$ this account isn't important.", "May god have $mercy$ on your email account.", "Is that how you protect your account from your $Partner?$", "This password needs more $emoji$", "Are You Always This $Retarded$ Or You Making A Special Effort?", "Don't come $crying$ to me when you're hacked.", "Really, you call $that!$ a password?", "Find Your $Patience$ Before I Lose Mine", "I'm Afraid About Your $Wifi$ Password", "Do You Even Know What A Password $Is!?$", "Are you taking this $seriously?$", "How Old Are You? $5$ ??", "Now its $Enough$", "I've seen $dogs$ with better passwords.", "I Am Busy Right Now, Can I $Ignore$ You Some Other Time?", "Mashing your $head$ on the keyboard would be more secure", "Yaar kuch aur type karo $mzaa$ nhi aa rha.", "I Was $Ignoring$ You From The Very First Attempt"];
-    let medium = ["I May Look Calm, But Inside My Mind, I’ve $Killed$ You 20 Times", "$Zombies$ Eat Brains. You’re Safe", "You're Starting To $Understand.$", "Fair, But Not Your $Best$ Work."];
+    let medium = ["I May Look Calm, But Inside My Mind, I’ve $Killed$ You 20 Times.", "$Zombies$ Eat Brains. You’re Safe.", "You're Starting To $Understand.$", "Fair, But Not Your $Best$ Work."];
     let good = ["I Would $Almost$ Use This.", "I $might$ use this.", "Who $Wrote$ This For You?", "Now You Are $Taking!!$", "Thodi aur $mehenat$ ki zarurat hai.", "I'll Give You An $A$ For Effort.", "Its Pretty Strong... I $Guess$."];
-    let length = ["This is pretty $pathetic.$", "Apse $better$ ummeed kiye the hum.", "You're $joking$ right?", "$Advice:$ Stop pressing the keys!!", "Worst. Password. $Ever.$", "$Size$ Doesn't Matter try harder buddy.", "Perhaps this was good 10 $years$ ago.", "Yeah, Like You're Going To $Remember$ This.", "Kuch bhi type karne se $password$ nhi ban jata!", "You lack $creativity.$", "Matlab $Kuch$ Bhi Huh ?? "];
+    let length = ["This is pretty $pathetic.$","Kuch kam dhanda kar lo $faltu$ me type karne se acha.", "You're $joking$ right?", "$Advice:$ Stop pressing the keys!!", "Worst. Password. $Ever.$", "$Size$ Doesn't Matter try harder buddy.", "Perhaps this was good 10 $years$ ago.", "Yeah, Like You're Going To $Remember$ This.", "Kuch bhi type karne se $password$ nhi ban jata!", "You lack $creativity.$", "Matlab $Kuch$ Bhi Huh ?? "];
 
 
     // Regex for password strength
@@ -100,20 +100,6 @@ import { banWords } from "./banwords.js";
                 addComment(length);
                 break;
         }
-
-
-        // if (level === 1) {
-        //     addComment(bad);
-        // }
-        // if (level === 2) {
-        //     addComment(medium);
-        // }
-        // if (level === 3) {
-        //     addComment(good);
-        // }
-        // if (level === 4) {
-        //     addComment(length);
-        // }
 
 
     });
