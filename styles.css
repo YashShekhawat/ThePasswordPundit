@@ -40,7 +40,7 @@ body {
 }
 
 header h1 {
-    font-family: "Gilroy";
+    font-family: 'Gilroy',sans-serif;
     font-weight: 700;
     font-size: 2.5rem;
 }
@@ -56,7 +56,7 @@ section {
 
 h4 {
     width: 60%;
-    font-family: 'Gilroy';
+    font-family: 'Gilroy',sans-serif;;
     font-weight: bold;
     letter-spacing: -1px;
     font-size: 4.5rem;
@@ -188,7 +188,7 @@ span h4 {
     text-align: center;
     font-size: 18px;
     color: #fff;
-    font-family: 'Gilroy';
+    font-family: 'Gilroy',sans-serif;
 }
 
 .box-right .header {
