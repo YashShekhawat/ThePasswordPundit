@@ -17,17 +17,14 @@ import { banWords } from "./banwords.js";
     let good = ["I'm $impressed$ by your password choice.", "I hope you're proud of yourself for choosing such a $secure$ password.", "Using a strong password is like hiring a personal $bodyguard$ for your account", "Looks like you're taking your password security $seriously$. Good job!", "I'm $impressed$, that's a pretty strong password you've got there. Keep up the good work!", "I Would $Almost$ Use This.", "I $might$ use this.", "Who $Wrote$ This For You?", "Now You Are $Taking!!$", "I'll Give You An $A$ For Effort.", "Its Pretty Strong... I $Guess$."];
     let length = ["having a $long$ password doesn't automatically make it strong.", "This is pretty $pathetic.$", "You're $joking$ right?", "$Advice:$ Stop pressing the keys!!", "Worst. Password. $Ever.$", "$Size$ Doesn't Matter try harder buddy.", "Perhaps this was good 10 $years$ ago.", "Yeah, Like You're Going To $Remember$ This.", "You lack $creativity.$"];
 
-
     // Regex for password strength
     let strongRegex = /(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{8,})/;
     let mediumRegex = /((?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{6,}))/;
-
 
     //Random value generator for array
     function randomValue(array) {
         return Math.floor(Math.random() * array.length);
     }
-
 
     let storageRandom;
 
@@ -42,14 +39,11 @@ import { banWords } from "./banwords.js";
         }
         storageRandom = random;
 
-
         let commentString = array[random];
         let coloredString = commentString.split('$')
 
-
         let coloredText = `${coloredString[0]}<span class="colored">${coloredString[1]}</span>${coloredString[2]}`;
         mainComment.innerHTML = coloredText;
-
 
         let div = `<h4 class="animate">${coloredText}</h4>`
         comment.innerHTML = div;
@@ -58,10 +52,7 @@ import { banWords } from "./banwords.js";
 
     //import file
     let stringArray = banWords.split(",");
-
     password.addEventListener('input', () => {
-
-
         let level;
         let passwordValue = password.value;
 
@@ -74,7 +65,6 @@ import { banWords } from "./banwords.js";
             }
             else if (mediumRegex.test(passwordValue)) {
                 level = 2;
-
             }
             else if (passwordValue.length > 20) {
                 level = 4;
@@ -82,7 +72,6 @@ import { banWords } from "./banwords.js";
             else {
                 level = 1;
             }
-
         }
 
         switch (level) {
@@ -99,39 +88,24 @@ import { banWords } from "./banwords.js";
                 addComment(length);
                 break;
         }
-
-
     });
 
-
     // suggestion button
-
     let suggestionBtn = document.querySelector('#needSuggestion');
     let scroll;
     let suggestionBox = document.querySelector('.suggestion-div');
 
-
     suggestionBtn.addEventListener('click', function () {
-
         suggestionBox.classList.toggle('showBox');
-
-
         scroll = setTimeout(function () {
             window.scrollTo({
                 top: suggestionBox.offsetTop,
                 behavior: 'smooth'
             });
-
         }, 100);
-
-
     });
 
-
-
-
     (function ShowContent() {
-
         rightBox.addEventListener('click', function () {
             content.classList.toggle('content')
             rightBox.classList.toggle('showBoxContent');
@@ -149,14 +123,9 @@ import { banWords } from "./banwords.js";
         })
     })();
 
-
-
-
     (function weakPasswordsSection() {
-
         let allWeakPasswords = ["Password", "Secure", "123456", "Password123", "Peanuts"];
         let weakPasswords = document.querySelector('.weakPasswords');
-
 
         for (let i = 0; i < 5; i++) {
             let insert = allWeakPasswords[i];
@@ -164,8 +133,5 @@ import { banWords } from "./banwords.js";
             list.appendChild(document.createTextNode(insert));
             weakPasswords.appendChild(list);
         }
-
-
     })();
-
 })();
